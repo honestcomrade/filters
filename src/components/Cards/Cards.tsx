@@ -1,7 +1,7 @@
 import { useContext } from "react";
-import { SearchContext } from "../context/SearchContext";
-import { cardData } from "../data/cards";
-import { Card } from "./Card";
+import { SearchContext } from "@/context/SearchContext";
+import { cardData } from "@/data/cards";
+import { Card } from "@/components/Cards/Card";
 
 export function Cards() {
   const { search } = useContext(SearchContext);

@@ -1,4 +1,4 @@
-import type { Card } from '../types/ICard'
+import type { Card } from '../types/Card'
 
 export const cardData: Card[] = [
   {

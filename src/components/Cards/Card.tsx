@@ -1,6 +1,6 @@
-import type { Card } from '../types/ICard'
+import type { Card as CardType } from '@/types/Card'
 
-function CardComponent({ title, description, imageUrl }: Card) {
+export function Card({ title, description, imageUrl }: CardType) {
   return (
     <div className="card">
       <img src={imageUrl} alt={title} className="card-image" />
@@ -11,5 +11,3 @@ function CardComponent({ title, description, imageUrl }: Card) {
     </div>
   )
 }
-
-export { CardComponent as Card }

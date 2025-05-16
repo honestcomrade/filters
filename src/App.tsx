@@ -1,27 +1,18 @@
-import { Search } from './components/Search'
-import { SearchProvider } from './context/SearchContext'
-import { Cards } from './components/Cards'
+import { Search } from '@/components/Search/Search'
+import { SearchProvider } from '@/context/SearchContext'
+import { Cards } from '@/components/Cards/Cards'
 import './App.css'
 
-function AppContent() {
-
-  return (
-    <div className="container">
-      <h1>Card List</h1>
-      <Search />
-      <div className="card-grid">
-        <Cards />
-      </div>
-    </div>
-  )
-}
-
-function App() {
+export function App() {
   return (
     <SearchProvider>
-      <AppContent />
+      <div className="container">
+        <h1>Card List</h1>
+        <Search />
+        <div className="card-grid">
+          <Cards />
+        </div>
+      </div>
     </SearchProvider>
   )
 }
-
-export default App
