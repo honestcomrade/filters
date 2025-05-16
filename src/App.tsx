@@ -9,9 +9,7 @@ export function App() {
       <div className="container">
         <h1>Card List</h1>
         <Search />
-        <div className="card-grid">
-          <Cards />
-        </div>
+        <Cards />
       </div>
     </SearchProvider>
   )

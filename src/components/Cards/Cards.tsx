@@ -17,9 +17,11 @@ export function Cards() {
         <h2>No results found</h2>
       </div>
     ) : (
-      getFilteredCards().map((card) => (
-        <Card key={card.id} {...card} />
-      ))
+      <div className="card-grid">
+        {getFilteredCards().map((card) => (
+          <Card key={card.id} {...card} />
+        ))}
+      </div>
     )
   )
 }

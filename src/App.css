@@ -79,9 +79,10 @@
 
 .card-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
-  gap: 2rem;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1.5rem;
   margin-top: 2rem;
+  width: 100%;
 }
 
 .card {
@@ -89,6 +90,8 @@
   border-radius: 8px;
   overflow: hidden;
   transition: transform 0.2s;
+  width: 100%;
+  max-width: 100%;
 }
 
 .card:hover {
